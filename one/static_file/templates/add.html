@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block left_content %}
+<img src="https://gss0.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=fc6cc690a1773912c4738d67c829aa20/bba1cd11728b4710b37d7de1cbcec3fdfc032348.jpg" title"sas" alt="b4464646g" width="680" height="150">
+<div class="topnews">
+	<h2>新文章</h2>
+  <form class="" action="" method="post">
+    {%csrf_token%}
+    {%for field in form%}
+    <div>
+      {{field.label}}:{{field}}
+      {{field.errors}}
+    </div>
+    {%endfor%}
+    <div class="fieldWrapper">
+      <p><input type="submit" value= "提交"></p>
+    </div>
+  </form>
+</div>
+{% endblock %}
