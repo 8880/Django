@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tags test</title>
+  </head>
+  <body>
+    {%if error%}
+    <p style="color:red">对不起，操作错误</p>
+    {%else%}
+    <p>操作完成</p>
+    {%endif%}
+    {%for i in list%}
+    <p>{{i}}</p>
+    {%endfor%}
+  </body>
+</html>

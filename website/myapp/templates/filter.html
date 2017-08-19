@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>filter test</title>
+  </head>
+  <body>
+    num:{{num | add:"2" | add:'3'}}<br>
+    str:{{s | lower}}<br>
+
+    {%load poll_extras%}
+    fil:{{s | rep:' '}}     <!-- 自定义的过滤器 -->
+  </body>
+</html>
